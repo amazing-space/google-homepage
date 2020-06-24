@@ -14,11 +14,31 @@ body {
     height: 70px;
     /* border: solid sienna; */
 }
+#nav a {
+    color: #222;
+}
 #nav li{
     display: inline-block; 
     position: relative;
-    left: 90%;
-    padding: 1rem;
+    left: 82%;
+    padding: .7rem;
+}
+
+#nav li button {
+    background-color: cornflowerblue;
+    padding: .5rem 1rem;
+}
+#nav li button:hover {
+    background-color: rgb(65, 133, 211);
+    box-shadow: 3px 3px 3px #eee;
+
+}
+#nav li button a{
+    color: white;
+    text-decoration: white;
+}
+#nav li button a:hover{
+    text-decoration: underline white;
 }
 
 main {
@@ -39,9 +59,16 @@ input[type="text"] {
     width: 100%;
     border-radius: 1rem;;
 }
+input[type="text"]:hover {
+    box-shadow: 3px 3px 3px #eee;
+    background-color: rgb(103, 159, 216);
+}
 
 a {
     text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 button {
@@ -53,7 +80,7 @@ button {
     border-radius: 10px;
     margin: 15px 10px;
 }
-button[type="submit"]:hover {
+main button[type="submit"]:hover {
         box-shadow: 0 1px 1px rgba(0,0,0,0.1);
         background-color: #f8f8f8;
         border: 1px solid #c6c6c6;
